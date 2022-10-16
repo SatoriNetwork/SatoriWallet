@@ -1,0 +1,2 @@
+setuptools==56.0.0
+python-ravencoinlib==0.2.2
