@@ -1,8 +1,8 @@
 import socket 
 import json
 import random
-from satoriwallet.lib.apis.blockchain import ElectrumX
-from satoriwallet.lib.wallet.structs import TransactionStruct 
+from satoriwallet.apis.blockchain import ElectrumX
+from satoriwallet.lib.structs import TransactionStruct 
 
 class Ravencoin():
     def __init__(self, address, scripthash, electrumxServers):
