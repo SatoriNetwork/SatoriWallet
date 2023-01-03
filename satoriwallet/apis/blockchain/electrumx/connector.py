@@ -1,4 +1,5 @@
-import socket, ssl
+import socket
+import ssl
 
 
 class Connector:
@@ -18,4 +19,5 @@ class Connector:
         self.connection.settimeout(self.timeout)
         if self.ssl:
             self.connection = ssl.wrap_socket(self.connection)
+        print('connecting to', self.host + ':' + str(self.port))
         self.connection.connect((self.host, self.port))

@@ -1,5 +1,6 @@
 import logging
-import json, time
+import json
+import time
 from .connector import Connector
 
 
