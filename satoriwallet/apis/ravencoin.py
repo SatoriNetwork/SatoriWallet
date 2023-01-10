@@ -80,7 +80,7 @@ class Ravencoin():
             self.balance = interpret(self.conn.send(
                 'blockchain.scripthash.get_asset_balance',
                 self.scripthash)
-            ).get('confirmed', {}).get('SATORI', 'unknown')
+            ).get('confirmed', {}).get('SATORI', 0)
             self.stats = interpret(self.conn.send(
                 'blockchain.asset.get_meta',
                 'SATORI'))
